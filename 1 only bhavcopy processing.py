@@ -3,7 +3,7 @@ import os
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 
-def process_csv():
+def bhavcopy_processing():
     # Create a root window and hide it
     root = Tk()
     root.withdraw()
@@ -45,4 +45,4 @@ def process_csv():
     print(f"Processed file saved as: {output_file}")
 
 if __name__ == "__main__":
-    process_csv()
+    bhavcopy_processing()

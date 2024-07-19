@@ -1,6 +1,8 @@
 import pandas as pd
 
 def main():
+    # Filling empty TriggerDate and Price column in the tradesheet csv file
+    
     # Step 1: Automatically use 'bhavcopy_temp.csv' for the first CSV file
     bhavcopy_file = 'bhavcopy_temp.csv'
 

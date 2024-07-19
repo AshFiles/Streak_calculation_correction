@@ -20,7 +20,7 @@ def load_and_clean_csv(file_path):
     print(f"Cleaned columns in {file_path}: {data.columns.tolist()}")
     return data
 
-def process_file(file_path):
+def process_tradesheet_file(file_path):
     """
     Process the initial transaction CSV file.
     
@@ -87,7 +87,7 @@ def main():
     )
     
     if file_path:
-        data = process_file(file_path)
+        data = process_tradesheet_file(file_path)
         
         output_file_path = os.path.join(os.path.dirname(file_path), "transaction_details_temp.csv")
         try:

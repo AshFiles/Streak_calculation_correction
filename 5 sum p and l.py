@@ -3,7 +3,9 @@ import openpyxl
 import os
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-def process_csv():
+def sum_pnl_create_another_sheet():
+    # this sums up the total profit and loss, and show that data on another sheet in excel
+    
     file_path = 'transaction_details_temp.csv'
     
     # Check if the file exists
@@ -56,4 +58,4 @@ def process_csv():
     print(f"Processed file saved as: {excel_path}")
 
 if __name__ == "__main__":
-    process_csv()
+    sum_pnl_create_another_sheet()

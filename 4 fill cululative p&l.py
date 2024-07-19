@@ -1,6 +1,6 @@
 import pandas as pd
 
-def fill_cumulative_pnl(csv_file):
+def fill_cumulative_pnl_column(csv_file):
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_file)
     
