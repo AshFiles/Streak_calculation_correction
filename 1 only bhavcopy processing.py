@@ -25,6 +25,12 @@ def bhavcopy_processing():
     headers = [header.replace(" ", "") for header in headers]
     data = [[cell.replace(" ", "") for cell in row] for row in data]
 
+    # Find the index of the "SERIES" column
+    series_index = headers.index("SERIES")
+
+    # Filter rows where "SERIES" is "EQ"
+    data = [row for row in data if row[series_index] == "EQ"]
+
     # Get indices of required columns
     required_columns = ["SYMBOL", "DATE1", "LAST_PRICE"]
     column_indices = [headers.index(col) for col in required_columns if col in headers]
